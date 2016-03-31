@@ -1,0 +1,48 @@
+<html><head><title>T9-Word Take-Home Interview</title><meta charset="UTF-8">
+
+</head><body><h1>T9-Word Take-Home Interview</h1>
+
+Before our touch-screen smartphones had full software keyboards for our typing pleasure, our thumbs were busy pounding out text messages using only the 12 buttons on our flip phones. The goal of this exercise is to encode strings of input into the sequence of digits that would have to be pressed on the number pad to produce that string, and then decode that sequence back into the input string.<br/>
+
+<h3>Specifications</h3>
+
+<div><ul>
+<li>Letters will be represented by a standard 12-button phone pad as displayed below:
+
+<br/><span style='max-width:25%'><img src="https://raw.githubusercontent.com/f00biebletch/remind-ios-takehome/master/keypad.png" alt='' width='201' height='302'></img></span></li></ul></div><div><ul><li>Repeated characters will be separated in the numerical input by a hyphen. e.g. The string “AA” is represented by the sequence “2-2”
+
+<br/></li></ul></div><div><ul><li>Repeated numbers will wrap around the letters on the corresponding button. e.g. The sequences “32,” “33332,” and “33333332” all represent the string “DA”
+
+<br/></li></ul></div><h3>Minimum Requirements</h3>
+
+<div><ul><li>Your code must demonstrate logic that accepts a String as input and returns the T9 numerical sequence that represents that string
+
+<br/></li></ul></div><div><ul><li>Your code must demonstrate logic that accepts a T9 numerical sequence as input and returns the String represented by that sequence
+
+<br/></li></ul></div><div><ul><li>Your code must demonstrate a reasonably complex input string being encoded into a T9 numerical sequence that is then decoded back into a string
+
+<br/></li></ul></div><div><ul><li>Your code must be able to encode and decode (at minimum) all 26 uppercase letters of the alphabet, plus a comma, space, and period.
+
+<br/></li></ul></div><h3>Logistics</h3>
+
+Create an empty command-line application in Xcode. You can go classic with Objective-C or live on the edge with Swift, whatever you're more comfortable with!<br/>
+
+<div><img src="https://raw.githubusercontent.com/f00biebletch/remind-ios-takehome/master/capture.png"  width='405' height='271'></img></div>This will give you a main.m or main.swift file to begin working. You may add as many additional source files as necessary for your solution. When you have finished, simply zip up your project and attach it to an email reply.<br/>
+
+<h3>Example inputs/outputs</h3>
+
+encode(“hello”) =&gt; “4433555-555666”<br/>
+
+encode(“remind”) =&gt; “777336444663”<br/>
+
+<br/>
+
+decode(“444744666-6633”) =&gt; “IPHONE”<br/>
+
+decode(“94447777222666-66777744466”) =&gt; “WISCONSIN”<br/>
+
+<br/>
+
+<br/>
+
+</body></html>
